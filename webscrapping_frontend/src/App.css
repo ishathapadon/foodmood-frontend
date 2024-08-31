@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  scroll-behavior: smooth;
+  background: #000 !important;
+  color: #fff !important;
+}
+.herobanner{
+  max-width: 800px !important;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  row-gap: 20px;
+  .hero-text{
+    h1{
+      font-family: "Gilda Display", serif;
+      font-size: 45px;
+       letter-spacing: 5px;
+       font-style: normal;
+       line-height: 80px;
+       font-weight: 200;
+       span{
+        color: #A179FE;
+       }
+    }
+    p{
+      font-size: 19px;
+      letter-spacing: 1px;
+      font-weight: 100;
+      span{
+        color: #A179FE;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.lister-container{
+.dishes-container{
+  
+  overflow-y: auto;
+}
+  .form-control{
+    background: transparent;
+    padding: 15px 25px;
+    border: 1px solid #3f3e3e;
+    color: #fff;
+    width: 600px;
+    margin: auto;
+    border-radius: 50px;
+  }
+   .form-control:focus{
+    background: transparent;
+    color: #A179FE;
+    outline: none;
+    border: 1px solid #A179FE;
+  }
+  .form-control::placeholder{
+    color: #ededed;
+  }
+  
+  .listed-data{
+    height: 500px;
+    .not-found{
+      height: 450px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p{
+        font-size: 20px;
+        color: #A179FE;
+      }
+    }
+  }
+}
+.star {
+  color: #ccc; /* Unfilled star color */
+  font-size: 16px;
+  margin-right: 2px;
+}
+
+.star.filled {
+  color: #ffd700; /* Filled star color (gold) */
+}
+
+.star.half-filled {
+  color: #ffd700; /* Gold color for half star */
+  position: relative;
+}
+
+.star.half-filled::before {
+  content: "★";
+  color: #ccc; /* Gray color for half of the star */
+  position: absolute;
+  width: 50%;
+  overflow: hidden;
+  left: 0;
+}
+.data-container{
+  height: 600px;
+  overflow-y: auto;
+}
